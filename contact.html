@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com"/>
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Nunito:wght@200..1000&family=Open+Sans:wght@300..800&family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+     <link rel="stylesheet" href="css/style.css"/>
+     <style>
+        body{
+            background-color:  #f9f9f9;
+        }
+     </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+      <div class="logo">
+        <img src="photo/logo2.avif" alt="logo" />
+      </div>
+      <div class="parts">
+        <nav>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobil-parts">
+        <input type="checkbox" id="mo-parts" hidden>
+        <label for="mo-parts" class="burger">
+          <span class=" line line-first"></span>
+          <span class=" line line-middle"></span>
+          <span class=" line line-second"></span>
+        </label>
+            <ul class="nav-mobil-list"> 
+            <li><a href="index.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    </header>
+    <main>
+        <div class="form-container">
+  <h2>Send me a message!</h2>
+  <p>Got a question or proposal, or just want to say hello? Go ahead.</p>
+
+  <form class="contact-form" method="POST" action="#">
+    <div class="form-row">
+      <div class="input-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="_replyto" placeholder="Enter your email" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="input-group full-width">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Hello..." required></textarea>
+      </div>
+    </div>
+
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+    </main>
+    
+</body>
+</html>
